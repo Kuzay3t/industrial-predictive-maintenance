@@ -41,8 +41,6 @@ Traditional reactive maintenance leads to high costs, unplanned downtime, and pr
 > The stacking ensemble achieved the highest overall performance with an AUC of **0.987**.
 
 ---
-
-## 🗂️ Repository Structure
 industrial-predictive-maintenance/
 │
 ├── AI_IoT_Predictive_Maintenance_Analysis.ipynb  # Main analysis notebook
@@ -65,3 +63,74 @@ industrial-predictive-maintenance/
 ├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
+
+
+---
+
+## 🚀 Usage
+
+Launch the main analysis notebook:
+
+```bash
+jupyter notebook AI_IoT_Predictive_Maintenance_Analysis.ipynb
+```
+
+The notebook walks through the full pipeline: data loading → EDA → preprocessing → model training → evaluation → SHAP interpretability.
+
+---
+
+## 🔍 Key Findings
+
+- **Temperature and pressure** are the most influential fault predictors (SHAP analysis)
+- **Vibration × Temperature interaction** produces a compounding fault signal — simultaneous anomalies in both sensors are far more indicative of failure than either alone
+- **Logistic Regression** fails to capture non-linear sensor interaction patterns, confirming the fault-detection problem is inherently non-linear
+- The **stacking ensemble** successfully combines SVM's precision discipline and XGBoost's fault-detection aggressiveness into a more balanced unified architecture
+- All pairwise model performance differences were statistically significant (McNemar's test, α = 0.05)
+
+---
+
+## 🏭 Application Context
+
+This system targets rotating electromechanical machinery critical to:
+- ⚡ National power generation
+- 🛢️ Oil and gas operations
+- 🏗️ Manufacturing facilities
+
+It provides a practical pathway for Nigerian industries to transition from reactive/preventive maintenance toward intelligent, data-driven operations aligned with **Industry 4.0**.
+
+---
+
+## 📄 Citation
+
+If you use this work, please cite:
+
+```bibtex
+@article{kuzayet2026benchmarking,
+  title={Benchmarking Classification Performance for Binary-Class Fault Detection Under Real-World Imbalanced Data Conditions},
+  author={Kuzayet, Bagai Glory and Honour, Eje Obed and Bala, Jibril Abdullahi},
+  institution={Federal University of Technology Minna},
+  year={2026}
+}
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get involved.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👥 Authors
+
+- **Bagai Glory Kuzayet** — kuzayet.m2204354@st.futminna.edu.ng
+- **Eje Obed Honour** — obed.m2200396@st.futminna.edu.ng
+- **Jibril Abdullahi Bala** — jibril.bala@futminna.edu.ng
+
+*Department of Mechatronics Engineering, Federal University of Technology Minna, Niger State, Nigeria*
