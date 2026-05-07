@@ -1,4 +1,3 @@
-# industrial-predictive-maintenance
 
 # Industrial Predictive Maintenance
 
@@ -44,3 +43,25 @@ Traditional reactive maintenance leads to high costs, unplanned downtime, and pr
 ---
 
 ## 🗂️ Repository Structure
+industrial-predictive-maintenance/
+│
+├── AI_IoT_Predictive_Maintenance_Analysis.ipynb  # Main analysis notebook
+├── equipment_anomaly_data.csv                    # Dataset (7,672 sensor records)
+├── requirements.txt                              # Python dependencies
+├── setup.py                                      # Package installation
+├── pyproject.toml                                # Modern Python config
+│
+├── Box plot of dataset.png
+├── ML processing pipeline flowchart.png
+├── ROC curve performance plotted against the f...
+├── comparative confusion matrix of four models...
+├── comparative scatter plot of dataset.png
+├── plot of dataset features after preprocessing...
+├── plot of dataset features before preprocessing...
+├── precision-recall curve.png
+├── primary metric comparison.png
+├── training-testing curve.png
+│
+├── CONTRIBUTING.md
+├── LICENSE
+└── README.md
